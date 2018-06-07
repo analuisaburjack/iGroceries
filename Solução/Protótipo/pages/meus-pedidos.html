@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/meus-pedidos.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body>
+
+    <nav class="nav-extended teal darken-2">
+        <div class="nav-wrapper">
+          <a class="brand-logo"><i class="material-icons left">broken_image</i>iGroceries</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="tela-inicial.html" class="waves-effect waves-light btn-small">Entrar ou cadastre-se</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="main.html">Buscar</a></li>
+            <li class="tab"><a href="minhas-listas.html">Minhas Listas</a></li>
+            <li class="tab"><a class="active" href="meus-pedidos.html">Meu carrinho</a></li>
+            <li class="tab"><a href="descobrir.html">Descobrir</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row valign-wrapper">
+      <div class="col s12 m6">
+        <div class="card-panel cartao-apresentacao">
+          <h3>Meus pedidos</h3>
+          <table>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Valor un.</th>
+            <th>Valor</th>
+          </tr>
+          <tr>
+            <td>Tomate</td>
+            <td>2 kg</td>
+            <td>R$ 2,99</td>
+            <td>R$ 5,98</td>
+          </tr>
+          <tr>
+            <td>Macarrão</td>
+            <td>1 un.</td>
+            <td>R$ 3.20</td>
+            <td>R$ 3.20</td>
+          </tr>
+          <tr>
+            <td>Requeijão</td>
+            <td>2 un.</td>
+            <td>R$ 5,10</td>
+            <td>R$ 10,20</td>
+          </tr>
+          <tr>
+            <td>Café 1 kg.</td>
+            <td>1 un.</td>
+            <td>R$ 4.50</td>
+            <td>R$ 4.50</td>
+          </tr>
+          <tr>
+            <td>Fraldinha</td>
+            <td>800g</td>
+            <td>R$ 19,99</td>
+            <td>R$ 15.99</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><b>Total:</b></td>
+            <td>R$ 39.87</td>
+          </tr>
+        </table>
+        <a class="waves-effect waves-light btn right bottom">Fechar lista</a>
+        </div>
+      </div>
+
+      <form class="col s12 m6">
+        <h6>Endereço</h6>
+        <div class="row">
+          <div class="input-field col s6">
+            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          </div>
+        </div>
+
+        <h6>Pagamento</h6>
+        <div class="row">
+          <div class="input-field col s6">
+            <input value="I am not editable" id="disabled" type="text" class="validate">
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input value="I am not editable" id="disabled" type="text" class="validate">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input value="I am not editable" id="disabled" type="text" class="validate">
+          </div>
+          <div class="input-field col s6">
+            <input value="I am not editable" id="disabled" type="text" class="validate">
+          </div>
+        </div>
+      </form>
+    </div>
+    <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+</body>
+</html>
